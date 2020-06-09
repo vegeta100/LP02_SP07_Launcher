@@ -11,7 +11,7 @@
         android:layout_marginTop="0px"
         android:background="#4DFFFFFF">
         <TextView
-            android:id="@+id/time"
+            android:id="@+id/moment"
             android:layout_width="110px"
             android:layout_height="50px"
             android:layout_marginLeft="20px"
@@ -24,7 +24,7 @@
             android:id="@+id/amorpm"
             android:layout_width="160px"
             android:layout_height="50px"
-            android:layout_toRightOf="@+id/time"
+            android:layout_toRightOf="@+id/moment"
             android:layout_centerVertical="true"
             android:text="AM"
             android:gravity="center_vertical"

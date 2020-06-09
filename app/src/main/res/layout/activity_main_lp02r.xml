@@ -13,7 +13,7 @@
         android:focusable="false">
 
         <TextView
-            android:id="@+id/mycalendar"
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -25,7 +25,7 @@
             android:textSize="35sp" />
 
         <TextView
-            android:id="@+id/time"
+            android:id="@+id/moment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -39,7 +39,7 @@
             android:visibility="invisible" />
 
         <TextView
-            android:id="@+id/machine_number"
+            android:id="@+id/machine_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15px"
-            android:layout_toRightOf="@+id/time"
+            android:layout_toRightOf="@+id/moment"
             android:focusable="false"
             android:gravity="center_vertical"
             android:text=""
