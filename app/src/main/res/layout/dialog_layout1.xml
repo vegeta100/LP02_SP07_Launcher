@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600px"
+    android:layout_height="260px"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57px"
+        android:focusable="false"
+        android:gravity="center"
+
+        android:text="@string/brightness"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/brightness_2"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:background="@drawable/selectbgselector3"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/brightness_2"
+        android:nextFocusLeft="@id/brightness_1"
+        android:nextFocusRight="@id/brightness_3"
+
+        android:nextFocusUp="@id/brightness_2"
+        android:scaleType="centerInside"
+        android:text="@string/normal"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/brightness_1"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_alignTop="@+id/brightness_2"
+        android:layout_marginLeft="65px"
+        android:background="@drawable/selectbgselector3"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/brightness_1"
+        android:nextFocusLeft="@id/brightness_1"
+        android:nextFocusRight="@id/brightness_2"
+        android:nextFocusUp="@id/brightness_1"
+        android:scaleType="centerInside"
+        android:text="@string/low_brightness"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/brightness_3"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/brightness_2"
+        android:layout_marginRight="65px"
+        android:background="@drawable/selectbgselector3"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/brightness_3"
+        android:nextFocusLeft="@id/brightness_2"
+        android:nextFocusRight="@id/brightness_3"
+        android:nextFocusUp="@id/brightness_3"
+        android:scaleType="centerInside"
+        android:text="@string/high_brightness"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+</RelativeLayout>
+

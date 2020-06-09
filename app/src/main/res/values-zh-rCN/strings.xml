@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">SP07</string>
+    <string name="app_center">应用中心</string>
+    <string name="settings">设置</string>
+    <string name="manager">文件管理</string>
+    <string name="hd_in">HD  IN</string>
+    <string name="projsettings">投影设置</string>
+    <string name="same_screen">手机同屏</string>
+    <string name="brightness">亮度</string>
+    <string name="projection_mode">投影方式</string>
+    <string name="keystone_correction">梯形校正</string>
+    <string name="low_brightness">节能</string>
+    <string name="normal">正常</string>
+    <string name="high_brightness">高亮</string>
+    <string name="rotate_front">正投</string>
+    <string name="rotate_rear">背投</string>
+    <string name="rotate_ceiling">吊装正投</string>
+    <string name="rotate_rear_ceiling">吊装背投</string>
+    <string name="manual">手动</string>
+    <string name="auto">自动</string>
+</resources>
+

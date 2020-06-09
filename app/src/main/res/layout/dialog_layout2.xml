@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="680px"
+    android:layout_height="300px"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57px"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/projection_mode"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:layout_marginTop="170px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/projection_1"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/brightness_2"
+                android:layout_marginRight="10px"
+                android:layout_alignTop="@+id/brightness_2"
+                android:background="@drawable/selectbgselector3"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusDown="@id/projection_1"
+                android:nextFocusLeft="@id/projection_1"
+                android:nextFocusRight="@id/projection_2"
+                android:nextFocusUp="@id/projection_1"
+                android:scaleType="centerInside"
+                android:text="@string/rotate_front"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/projection_2"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/brightness_2"
+                android:layout_marginRight="10px"
+                android:layout_alignTop="@+id/brightness_2"
+                android:background="@drawable/selectbgselector3"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusDown="@id/projection_2"
+                android:nextFocusLeft="@id/projection_1"
+                android:nextFocusRight="@id/projection_3"
+                android:nextFocusUp="@id/projection_2"
+                android:scaleType="centerInside"
+                android:text="@string/rotate_rear"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/projection_3"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/brightness_2"
+                android:layout_alignTop="@+id/brightness_2"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/selectbgselector3"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusDown="@id/projection_3"
+                android:nextFocusLeft="@id/projection_2"
+                android:nextFocusRight="@id/projection_4"
+                android:nextFocusUp="@id/projection_3"
+                android:scaleType="centerInside"
+                android:text="@string/rotate_ceiling"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/projection_4"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/brightness_2"
+                android:layout_alignTop="@+id/brightness_2"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/selectbgselector3"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusDown="@id/projection_4"
+                android:nextFocusLeft="@id/projection_3"
+                android:nextFocusRight="@id/projection_4"
+                android:nextFocusUp="@id/projection_4"
+                android:scaleType="centerInside"
+                android:text="@string/rotate_rear_ceiling"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

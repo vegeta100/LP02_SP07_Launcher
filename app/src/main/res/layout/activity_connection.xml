@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/brightness"
+        android:layout_width="459px"
+        android:layout_height="66px"
+        android:layout_marginTop="261px"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/selectbgselector2"
+        android:focusable="true"
+        android:gravity="center"
+
+        android:nextFocusDown="@id/projection_mode"
+        android:nextFocusLeft="@id/brightness"
+        android:nextFocusRight="@id/brightness"
+        android:nextFocusUp="@id/settings"
+
+        android:scaleType="centerInside"
+        android:text="无线同屏"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/projection_mode"
+        android:layout_width="459px"
+        android:layout_height="66px"
+        android:layout_below="@id/brightness"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectbgselector2"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/keystone_correction"
+        android:nextFocusLeft="@id/projection_mode"
+        android:nextFocusRight="@id/projection_mode"
+
+        android:nextFocusUp="@id/brightness"
+
+        android:scaleType="centerInside"
+        android:text="有线同屏"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        />
+
+    <ImageView
+        android:id="@+id/bri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="85dp"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="85dp"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="85dp"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+</RelativeLayout>
+

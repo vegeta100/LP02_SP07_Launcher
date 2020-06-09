@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="0px"
+        android:background="#4DFFFFFF">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="110px"
+            android:layout_height="50px"
+            android:layout_marginLeft="20px"
+            android:text="10:10"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/amorpm"
+            android:layout_width="160px"
+            android:layout_height="50px"
+            android:layout_toRightOf="@+id/time"
+            android:layout_centerVertical="true"
+            android:text="AM"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/battery"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:focusable="true"
+            android:src="@drawable/battery100" />
+
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/battery"
+            android:background="@null"
+            android:focusable="true"
+            android:src="@drawable/wifi_no" />
+
+        <ImageView
+            android:id="@+id/usb0"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/wifi"
+            android:background="@null"
+            android:focusable="true"
+            android:src="@null" />
+        <ImageView
+            android:id="@+id/bluetooth"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/usb0"
+            android:background="@null"
+            android:focusable="true"
+            android:src="@null" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/jutiyu"
+        android:layout_width="521px"
+        android:layout_height="294px"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="110px"
+
+        android:focusable="true"
+
+        android:nextFocusUp="@id/jutiyu"
+        android:nextFocusDown="@id/dianshijia"
+        android:nextFocusLeft="@id/jutiyu"
+        android:nextFocusRight="@id/youku"
+
+        android:src="@drawable/jutiyu" />
+
+    <ImageView
+        android:id="@+id/youku"
+        android:layout_width="320px"
+        android:layout_height="173px"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@+id/jutiyu"
+
+        android:focusable="true"
+
+        android:nextFocusUp="@id/youku"
+        android:nextFocusDown="@id/iqiyi"
+        android:nextFocusLeft="@id/jutiyu"
+        android:nextFocusRight="@id/youku"
+
+        android:src="@drawable/youku" />
+
+
+
+    <ImageView
+        android:id="@+id/iqiyi"
+        android:layout_width="320px"
+        android:layout_height="173px"
+        android:layout_alignLeft="@+id/youku"
+        android:layout_below="@+id/youku"
+        android:layout_marginTop="20px"
+
+        android:focusable="true"
+
+        android:nextFocusUp="@id/youku"
+        android:nextFocusDown="@id/mangguotv"
+        android:nextFocusLeft="@id/jutiyu"
+        android:nextFocusRight="@id/iqiyi"
+
+        android:src="@drawable/iqiyi" />
+
+    <ImageView
+        android:id="@+id/mangguotv"
+        android:layout_width="320px"
+        android:layout_height="173px"
+        android:layout_below="@+id/iqiyi"
+        android:layout_alignLeft="@+id/iqiyi"
+        android:layout_marginTop="20px"
+
+        android:focusable="true"
+
+        android:nextFocusUp="@id/iqiyi"
+        android:nextFocusDown="@id/mangguotv"
+        android:nextFocusLeft="@id/dianshijia"
+        android:nextFocusRight="@id/mangguotv"
+
+        android:src="@drawable/mangguotv" />
+
+    <ImageView
+        android:id="@+id/dianshijia"
+        android:layout_width="530px"
+        android:layout_height="214px"
+        android:layout_marginLeft="115px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/jutiyu"
+        android:layout_marginTop="15px"
+
+        android:focusable="true"
+
+        android:nextFocusUp="@id/jutiyu"
+        android:nextFocusDown="@id/dianshijia"
+        android:nextFocusLeft="@id/dianshijia"
+        android:nextFocusRight="@id/mangguotv"
+
+        android:src="@drawable/dianshijia" />
+</RelativeLayout>
+<!--
+    android:layout_width="530px"
+    android:layout_height="214px"-->

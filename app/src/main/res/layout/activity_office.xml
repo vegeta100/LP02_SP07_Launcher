@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+  <RelativeLayout
+      android:id="@+id/top"
+      android:layout_width="match_parent"
+      android:layout_height="60px"
+      android:layout_marginTop="0px"
+      android:background="#4DFFFFFF">
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="110px"
+        android:layout_height="50px"
+        android:layout_marginLeft="20px"
+        android:text="20:20"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="28px" />
+    <TextView
+        android:id="@+id/amorpm"
+        android:layout_width="160px"
+        android:layout_height="50px"
+        android:layout_toRightOf="@+id/time"
+        android:layout_centerVertical="true"
+        android:text="AM"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/battery"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@drawable/battery100" />
+
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_toLeftOf="@id/battery"
+        android:layout_marginRight="30px"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@drawable/wifi_no" />
+
+    <ImageView
+        android:id="@+id/usb0"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_toLeftOf="@id/wifi"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@null" />
+    <ImageView
+        android:id="@+id/bluetooth"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_toLeftOf="@id/usb0"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@null" />
+  </RelativeLayout>
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="0px"
+      android:layout_below="@+id/top"
+      android:background="@null">
+
+  <ImageView
+      android:id="@+id/word"
+      android:layout_width="265px"
+      android:layout_height="393px"
+
+      android:layout_centerInParent="true"
+
+      android:focusable="true"
+
+      android:nextFocusUp="@id/word"
+      android:nextFocusDown="@id/word"
+      android:nextFocusLeft="@id/powerpoint"
+      android:nextFocusRight="@id/guide"
+
+
+      android:src="@drawable/ioo" />
+
+  <ImageView
+      android:id="@+id/powerpoint"
+      android:layout_width="265px"
+      android:layout_height="393px"
+      android:layout_toLeftOf="@+id/word"
+      android:layout_alignTop="@+id/word"
+      android:layout_marginRight="80px"
+      android:background="@null"
+
+      android:focusable="true"
+
+      android:nextFocusUp="@id/powerpoint"
+      android:nextFocusDown="@id/powerpoint"
+      android:nextFocusLeft="@id/powerpoint"
+      android:nextFocusRight="@id/word"
+
+      android:src="@drawable/an" />
+
+  <ImageView
+      android:id="@+id/guide"
+      android:layout_width="265px"
+      android:layout_height="393px"
+      android:layout_toRightOf="@+id/word"
+      android:layout_alignTop="@+id/word"
+      android:layout_marginLeft="80px"
+      android:background="@null"
+
+      android:focusable="true"
+
+      android:nextFocusUp="@id/guide"
+      android:nextFocusDown="@id/guide"
+      android:nextFocusLeft="@id/word"
+      android:nextFocusRight="@id/guide"
+
+      android:src="@drawable/guide" />
+
+  <!--<TextView-->
+      <!--android:id="@+id/message_text"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_below="@+id/powerpoint"-->
+      <!--android:layout_alignLeft="@+id/powerpoint"-->
+      <!--android:layout_alignRight="@+id/powerpoint"-->
+      <!--android:layout_marginTop="5px"-->
+      <!--android:gravity="center"-->
+      <!--android:text="安卓"-->
+      <!--android:textSize="40px"-->
+      <!--android:textColor="@android:color/white"/>-->
+
+  <!--<TextView-->
+      <!--android:id="@+id/contacts_text"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_below="@id/word"-->
+      <!--android:layout_alignLeft="@id/word"-->
+      <!--android:layout_alignRight="@id/word"-->
+      <!--android:layout_marginTop="5px"-->
+      <!--android:gravity="center"-->
+      <!--android:text="iPhone"-->
+      <!--android:textSize="40px"-->
+      <!--android:textColor="@android:color/white"/>-->
+  </RelativeLayout>
+
+</RelativeLayout>

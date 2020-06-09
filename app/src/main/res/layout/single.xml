@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/hdmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@drawable/kong" />
+
+    <ImageView
+        android:id="@+id/av"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/hdmi"
+        android:background="@null"
+        android:focusable="true"
+        android:src="@drawable/av" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp" />
+
+</RelativeLayout>

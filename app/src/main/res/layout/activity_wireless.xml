@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Space
+        android:id="@+id/dot"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/powerpoint"
+        android:layout_width="265px"
+        android:layout_height="393px"
+        android:layout_alignTop="@+id/word"
+        android:layout_marginRight="80px"
+        android:layout_toLeftOf="@+id/dot"
+        android:scaleType="centerInside"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/powerpoint"
+        android:nextFocusLeft="@id/powerpoint"
+        android:nextFocusRight="@id/word"
+        android:nextFocusUp="@id/powerpoint"
+        android:src="@drawable/an"
+       />
+
+    <ImageView
+        android:id="@+id/word"
+        android:layout_width="265px"
+        android:layout_height="393px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="120px"
+        android:layout_toRightOf="@+id/dot"
+        android:scaleType="centerInside"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/word"
+        android:nextFocusLeft="@id/powerpoint"
+        android:nextFocusRight="@id/word"
+        android:nextFocusUp="@id/word"
+        android:src="@drawable/ioo"
+       />
+
+    <TextView
+        android:id="@+id/android_mirror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/powerpoint"
+        android:layout_alignLeft="@+id/powerpoint"
+        android:gravity="center"
+        android:layout_below="@+id/powerpoint"
+        android:layout_marginTop="0px"
+        android:text="安卓同屏"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="160px"
+        android:layout_height="46px"
+        android:layout_alignRight="@+id/powerpoint"
+        android:layout_alignLeft="@+id/powerpoint"
+        android:layout_marginRight="150px"
+        android:layout_marginLeft="150px"
+        android:gravity="center"
+        android:layout_below="@+id/android_mirror"
+        android:layout_marginTop="33px"
+        android:focusable="true"
+
+        android:nextFocusDown="@id/instruction"
+        android:nextFocusLeft="@id/instruction"
+        android:nextFocusRight="@id/instruction"
+        android:nextFocusUp="@id/powerpoint"
+
+        android:text="说明"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/ios_mirror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignLeft="@+id/word"
+        android:gravity="center"
+        android:layout_below="@+id/powerpoint"
+        android:layout_marginTop="0px"
+        android:text="苹果同屏"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        />
+
+</RelativeLayout>

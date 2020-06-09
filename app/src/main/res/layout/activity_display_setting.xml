@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/brightness"
+        android:layout_width="459px"
+        android:layout_height="66px"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/selectbgselector2"
+        android:focusable="true"
+        android:gravity="center"
+
+        android:nextFocusDown="@id/projection_mode"
+        android:nextFocusLeft="@id/brightness"
+        android:nextFocusRight="@id/brightness"
+        android:nextFocusUp="@id/settings"
+
+        android:scaleType="centerInside"
+        android:text="@string/brightness"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/projection_mode"
+        android:layout_width="459px"
+        android:layout_height="66px"
+        android:layout_below="@id/brightness"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectbgselector2"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/keystone_correction"
+        android:nextFocusLeft="@id/projection_mode"
+        android:nextFocusRight="@id/projection_mode"
+
+        android:nextFocusUp="@id/brightness"
+
+        android:scaleType="centerInside"
+        android:text="@string/projection_mode"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/keystone_correction"
+        android:layout_width="459px"
+        android:layout_height="66px"
+        android:layout_below="@id/projection_mode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectbgselector2"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/keystone_correction"
+        android:nextFocusLeft="@id/keystone_correction"
+        android:nextFocusRight="@id/keystone_correction"
+        android:nextFocusUp="@id/projection_mode"
+
+        android:scaleType="centerInside"
+        android:text="@string/keystone_correction"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+</RelativeLayout>
+

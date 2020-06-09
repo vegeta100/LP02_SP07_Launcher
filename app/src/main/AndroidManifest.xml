@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zjsc.lp02s">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <!-- 在 Android 6.0 及以上，还需要打开位置权限。如果应用没有位置权限，蓝牙扫描功能不能使用（其它蓝牙操作例如连接蓝牙设备和写入数据不受影响）。 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.example.zjsc.lp02s.getcontext.MyApplication"
+        android:sharedUserId="android.uid.system"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name="com.example.zjsc.lp02s.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.OnlineActivity" />
+        <activity android:name="com.example.zjsc.lp02s.SingleActivity" />
+        <activity android:name="com.example.zjsc.lp02s.SettingsActivity" />
+        <activity android:name="com.example.zjsc.lp02s.MovieActivity">
+            <intent-filter>
+                <action android:name="MovieActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.OfficeActivity">
+            <intent-filter>
+                <action android:name="OfficeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.SearchActivity">
+            <intent-filter>
+                <action android:name="SearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.GuideActivity">
+            <intent-filter>
+                <action android:name="GuideActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.DisplaySettingActivity">
+            <intent-filter>
+                <action android:name="DisplaySettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.ConnectionActivity">
+            <intent-filter>
+                <action android:name="ConnectionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.zjsc.lp02s.HomeActivity" />
+        <activity android:name="com.example.zjsc.lp02s.view.TowDimensionalCodeActivity" />
+        <activity android:name="com.example.zjsc.lp02s.WirelessActivity">
+            <intent-filter>
+                <action android:name="WirelessActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.zjsc.lp02s.ShutDownActivity"
+            android:theme="@style/Theme.NotFullActivity">
+
+            <intent-filter>
+                <action android:name="ShutDownActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

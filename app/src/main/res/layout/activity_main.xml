@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="false">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="105px"
+        android:layout_marginTop="0px"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/mycalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="88px"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/machine_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/amorpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/time"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/shutdown"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88px"
+            android:background="@drawable/selectbgselector"
+
+            android:focusable="true"
+            android:nextFocusDown="@id/apps"
+
+            android:nextFocusLeft="@id/bluetoothspeaker"
+            android:nextFocusRight="@id/shutdown"
+            android:nextFocusUp="@id/shutdown"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/shutdown"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bluetoothspeaker"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88px"
+
+            android:focusable="true"
+            android:nextFocusDown="@id/googleplay"
+
+            android:nextFocusLeft="@id/bluetoothspeaker"
+            android:nextFocusRight="@id/bluetoothspeaker"
+            android:nextFocusUp="@id/bluetoothspeaker"
+
+            android:src="@drawable/shutdown" />
+
+
+
+
+        <ImageView
+            android:id="@+id/usb0"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetooth"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/usb0"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bluetooth"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetoothspeaker"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/bluetooth0" />
+
+
+        <ImageView
+            android:id="@+id/ethernet"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetooth"
+            android:background="@null"
+            android:focusable="false"
+
+            android:src="@drawable/ethernet"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetooth"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/wifi_no" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/youtube2"
+        android:layout_width="334px"
+        android:layout_height="453px"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="0px"
+        android:background="@null"
+        android:focusable="true"
+        android:nextFocusDown="@id/plus"
+        android:nextFocusLeft="@id/youtube2"
+        android:nextFocusRight="@id/apps"
+        android:nextFocusUp="@id/bluetoothspeaker"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/youtube2" />
+
+
+    <RelativeLayout
+        android:id="@+id/apps"
+        android:layout_width="375px"
+        android:layout_height="300px"
+
+        android:layout_alignTop="@+id/youtube2"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/youtube2"
+        android:focusable="true"
+        android:nextFocusDown="@id/airplay"
+        android:nextFocusLeft="@id/youtube2"
+        android:nextFocusRight="@id/googleplay"
+        android:nextFocusUp="@id/bluetoothspeaker"
+        android:background="@drawable/apps"
+        android:scaleType="fitXY">
+
+        <ImageView
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:focusable="true"
+            android:nextFocusDown="@id/av_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:nextFocusLeft="@id/youtube2"
+            android:nextFocusRight="@id/googleplay"
+            android:nextFocusUp="@id/bluetoothspeaker"
+            android:id="@+id/image_qrcode"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="126px"
+            android:layout_marginTop="86px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/app_center"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/googleplay"
+        android:layout_width="375px"
+        android:layout_height="140px"
+        android:layout_alignTop="@+id/apps"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="-0px"
+        android:layout_toRightOf="@+id/apps"
+        android:background="@null"
+        android:focusable="true"
+
+        android:nextFocusDown="@id/settings"
+        android:nextFocusLeft="@id/apps"
+        android:nextFocusRight="@id/youtube2"
+        android:nextFocusUp="@id/bluetoothspeaker"
+        android:scaleType="fitXY"
+        android:src="@drawable/googleplay" />
+
+    <RelativeLayout
+        android:id="@+id/av_input"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@id/hdmi"
+        android:background="@drawable/avinput"
+        android:focusable="true"
+
+        android:nextFocusLeft="@id/hdmi"
+        android:nextFocusRight="@id/youtube2"
+        android:nextFocusUp="@id/settings"
+        android:scaleType="fitXY">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/same_screen"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/airplay"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/youtube2"
+        android:background="@drawable/samescreen"
+        android:focusable="true"
+        android:nextFocusLeft="@id/youtube2"
+        android:nextFocusRight="@id/file"
+        android:nextFocusUp="@id/apps"
+        android:scaleType="fitXY">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/same_screen"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/file"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_alignTop="@+id/ios"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/airplay"
+        android:background="@drawable/file"
+        android:focusable="true"
+
+        android:nextFocusLeft="@id/airplay"
+        android:nextFocusRight="@id/hdmi"
+        android:nextFocusUp="@id/apps"
+
+        android:scaleType="fitXY">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/manager"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ios"
+        android:layout_width="119px"
+        android:layout_height="89px"
+
+        android:layout_alignTop="@+id/airplay"
+        android:layout_marginLeft="13px"
+        android:layout_toRightOf="@+id/airplay"
+        android:background="@null"
+        android:focusable="true"
+
+        android:nextFocusLeft="@id/airplay"
+        android:nextFocusRight="@id/file"
+        android:nextFocusUp="@id/apps"
+
+        android:src="@drawable/ios"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/settings"
+        android:layout_width="375px"
+        android:layout_height="140px"
+        android:layout_alignLeft="@id/googleplay"
+        android:layout_below="@id/googleplay"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/apps"
+        android:background="@drawable/settings"
+        android:focusable="true"
+
+        android:nextFocusDown="@id/av_input"
+        android:nextFocusLeft="@id/apps"
+        android:nextFocusRight="@id/youtube2"
+        android:nextFocusUp="@id/googleplay"
+
+        android:scaleType="fitXY">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/miracast"
+        android:layout_width="119px"
+        android:layout_height="89px"
+
+        android:layout_alignTop="@+id/airplay"
+        android:layout_marginLeft="16px"
+        android:layout_toRightOf="@+id/airplay"
+        android:background="@drawable/miracast"
+        android:focusable="true"
+        android:nextFocusDown="@id/plus"
+        android:nextFocusLeft="@id/airplay"
+        android:nextFocusRight="@id/hdmi"
+        android:nextFocusUp="@id/youtube2"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/projsettings"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hdmi"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_alignTop="@+id/file"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/file"
+        android:background="@drawable/hdmi"
+        android:focusable="true"
+
+        android:nextFocusLeft="@id/file"
+        android:nextFocusRight="@id/av_input"
+        android:nextFocusUp="@id/settings"
+        android:scaleType="fitXY">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/hd_in"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/youtube2"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="33px"
+        android:background="#000000"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="7px"
+        android:focusable="false">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus_big" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="36px"
+            android:layout_toRightOf="@id/LinearLayout2"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/my_recycler_view"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/plus0"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus2"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus3"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus4"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus5"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="100px"
+        android:layout_height="115px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>
+

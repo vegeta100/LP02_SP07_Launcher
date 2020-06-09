@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="600px"
+    android:layout_height="330px"
+    android:background="@drawable/dialog_bg">
+    <RelativeLayout
+        android:id="@+id/RelativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57px"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/keystone_correction"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/manual"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_alignTop="@+id/automatic"
+        android:layout_marginLeft="100px"
+        android:background="@drawable/selectbgselector3"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/seekBar"
+        android:nextFocusLeft="@id/manual"
+        android:nextFocusRight="@id/automatic"
+        android:nextFocusUp="@id/manual"
+        android:scaleType="centerInside"
+        android:text="@string/manual"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/automatic"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100px"
+        android:gravity="center"
+        android:background="@drawable/selectbgselector3"
+        android:focusable="true"
+        android:nextFocusDown="@id/automatic"
+        android:nextFocusLeft="@id/manual"
+        android:nextFocusRight="@id/automatic"
+        android:nextFocusUp="@id/automatic"
+        android:scaleType="centerInside"
+        android:text="@string/auto"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_below="@id/manual"
+        android:layout_marginTop="20px"
+
+        >
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="300px"
+            android:layout_height="48px"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:max="60"
+            android:maxHeight="5px"
+            android:minHeight="5px"
+            android:nextFocusDown="@id/seekBar"
+            android:nextFocusLeft="@id/seekBar"
+            android:nextFocusRight="@id/seekBar"
+            android:nextFocusUp="@id/manual"
+
+            android:paddingBottom="4px"
+
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:paddingTop="4px"
+            android:progressDrawable="@drawable/bg_bar"
+
+            android:thumb="@drawable/thumb_bar" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/seekBar"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="8px"
+            android:text="0"
+            android:textColor="#16BC5C"
+            android:textSize="18sp"
+        />
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
