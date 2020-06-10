@@ -20,7 +20,7 @@
         android:nextFocusDown="@id/projection_mode"
         android:nextFocusLeft="@id/brightness"
         android:nextFocusRight="@id/brightness"
-        android:nextFocusUp="@id/settings"
+        android:nextFocusUp="@id/settings_img"
 
         android:scaleType="centerInside"
         android:text="无线同屏"

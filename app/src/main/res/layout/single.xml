@@ -6,7 +6,7 @@
     android:gravity="center" >
 
     <ImageView
-        android:id="@+id/hdmi"
+        android:id="@+id/hdmi_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20px"
-        android:layout_toRightOf="@+id/hdmi"
+        android:layout_toRightOf="@+id/hdmi_img"
         android:background="@null"
         android:focusable="true"
         android:src="@drawable/av" />

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="false">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="105px"
+        android:layout_marginTop="0px"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="88px"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/moment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/machine_no_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20px"
+            android:focusable="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/am_pm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/moment_text"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/shutdown_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88px"
+
+            android:focusable="true"
+            android:nextFocusLeft="@id/shutdown_img"
+
+            android:nextFocusRight="@id/shutdown_img"
+            android:nextFocusUp="@id/shutdown_img"
+            android:nextFocusDown="@id/app_market_img"
+
+            android:src="@drawable/shutdown" />
+
+
+        <ImageView
+            android:id="@+id/usb_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetooth"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/usb0"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bluetooth"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/shutdown_img"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/bluetooth0" />
+
+
+        <ImageView
+            android:id="@+id/wifi_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/bluetooth"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/wifi_no" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/tencent_video_img"
+        android:layout_width="334px"
+        android:layout_height="453px"
+        android:layout_below="@id/top_bar_layout"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="0px"
+        android:background="@null"
+        android:focusable="true"
+        android:nextFocusLeft="@id/tencent_video_img"
+        android:nextFocusRight="@id/apps_layout"
+        android:nextFocusUp="@id/tencent_video_img"
+        android:nextFocusDown="@id/plus"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/tencent_video" />
+
+
+    <RelativeLayout
+        android:id="@+id/apps_layout"
+        android:layout_width="375px"
+        android:layout_height="300px"
+        android:layout_alignTop="@+id/tencent_video_img"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/tencent_video_img"
+        android:background="@drawable/apps"
+        android:focusable="true"
+        android:nextFocusRight="@id/app_market_img"
+        android:scaleType="fitXY">
+
+        <ImageView
+            android:id="@+id/image_qrcode"
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/app_market_img"
+        android:layout_width="375px"
+        android:layout_height="140px"
+        android:layout_alignTop="@+id/apps_layout"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/apps_layout"
+        android:nextFocusUp="@id/shutdown_img"
+        android:nextFocusRight="@id/app_market_img"
+        android:background="@drawable/app_market"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/settings_img"
+        android:layout_width="375px"
+        android:layout_height="140px"
+        android:layout_below="@id/app_market_img"
+        android:layout_alignLeft="@id/app_market_img"
+        android:layout_marginTop="20px"
+        android:background="@drawable/settings"
+        android:focusable="true"
+        android:nextFocusRight="@id/settings_img"
+        android:nextFocusDown="@id/av_input_img" />
+
+    <ImageView
+        android:id="@+id/mirror_img"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps_layout"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/tencent_video_img"
+        android:background="@drawable/mirror"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/file_img"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps_layout"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/mirror_img"
+        android:background="@drawable/file"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/hdmi_img"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps_layout"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/file_img"
+        android:background="@drawable/hdmi"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/av_input_img"
+        android:layout_width="178px"
+        android:layout_height="133px"
+        android:layout_below="@+id/apps_layout"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/hdmi_img"
+        android:background="@drawable/avinput"
+        android:focusable="true">
+
+    </ImageView>
+
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tencent_video_img"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="50px"
+        android:background="#000000"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider_line"
+        android:layout_marginTop="7px"
+        android:focusable="false">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus_big" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="36px"
+            android:layout_toRightOf="@id/LinearLayout2"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/my_recycler_view"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/plus0"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus2"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus3"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus4"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/plus5"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="79px"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="100px"
+        android:layout_height="115px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>
+

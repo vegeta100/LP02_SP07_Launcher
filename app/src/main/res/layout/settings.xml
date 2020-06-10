@@ -36,7 +36,7 @@
         android:background="@drawable/bg_grey">
 
         <TextView
-            android:id="@+id/wifi"
+            android:id="@+id/wifi_img"
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20px"
@@ -53,7 +53,7 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20px"
-            android:layout_toRightOf="@+id/wifi"
+            android:layout_toRightOf="@+id/wifi_img"
             android:background="@drawable/blackbox"
             android:gravity="center"
             android:text="便携式热点" />

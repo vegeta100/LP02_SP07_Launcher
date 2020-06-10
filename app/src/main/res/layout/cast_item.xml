@@ -16,7 +16,7 @@
         android:visibility="gone">
 
         <ImageView
-            android:id="@+id/airplay"
+            android:id="@+id/mirror_img"
             android:layout_width="129px"
             android:layout_height="164px"
             android:background="@null"
