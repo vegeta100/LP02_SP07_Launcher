@@ -185,7 +185,7 @@
         android:background="@drawable/settings"
         android:focusable="true"
         android:nextFocusRight="@id/settings_img"
-        android:nextFocusDown="@id/av_input_img" />
+        android:nextFocusDown="@id/live_broadcast_img" />
 
     <ImageView
         android:id="@+id/mirror_img"
